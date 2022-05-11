@@ -1,0 +1,1 @@
+[{"inputs":[],"name":"ballAt","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"pass","outputs":[],"stateMutability":"nonpayable","type":"function"}]
