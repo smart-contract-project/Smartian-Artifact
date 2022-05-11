@@ -18,18 +18,18 @@ if ls $OUTDIR/result-B4-compare 1> /dev/null 2>&1; then
     exit 1
 fi
 
-mkdir -p $OUTDIR/result-B4
+# mkdir -p $OUTDIR/result-B4
 
 # Run smartian, ilf, sFuzz, manticore, and mythril.
 for i in $(seq $1); do
-    python $SCRIPTDIR/run_experiment.py B4 smartian 600
-    # python $SCRIPTDIR/run_experiment.py B4 ilf 3600
-    # python $SCRIPTDIR/run_experiment.py B4 sFuzz 3600
+    python $SCRIPTDIR/run_experiment.py B4 smartian 300
+    # python $SCRIPTDIR/run_experiment.py B4 ilf 300
+    # python $SCRIPTDIR/run_experiment.py B4 sFuzz 300
     # python $SCRIPTDIR/run_experiment.py B4 manticore 3600 B4
     # python $SCRIPTDIR/run_experiment.py B4 mythril 3600
 done
-mkdir -p $OUTDIR/result-B4-compare/smartian
-mv $OUTDIR/B4-smartian-* $OUTDIR/result-B4-compare/smartian/
+# mkdir -p $OUTDIR/result-B4-compare/smartian
+# mv $OUTDIR/B4-smartian-* $OUTDIR/result-B4-compare/smartian/
 # mkdir -p $OUTDIR/result-B4-compare/ilf
 # mv $OUTDIR/B4-ilf-* $OUTDIR/result-B4-compare/ilf/
 # mkdir -p $OUTDIR/result-B4-compare/sFuzz
