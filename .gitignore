@@ -3,3 +3,4 @@ Smartian/
 *.swo
 *.pyc
 output/
+.DS_Store
